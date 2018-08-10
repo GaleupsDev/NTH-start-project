@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
-  if (window.isMobile !== undefined) {
+  console.log('начинает выполняться isMobile');
+  if (isMobile !== undefined) {
     // console.log(isMobile);
     if(isMobile.any) {
       var rootClasses = ' is-mobile';

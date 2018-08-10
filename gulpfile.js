@@ -447,7 +447,7 @@ gulp.task('img:opt', function (callback) {
 gulp.task('build', gulp.series(
   'clean',
   gulp.parallel('sprite:svg', 'sprite:png', 'copy:favicon', 'copy:favicon:data'),
-  gulp.parallel('style', 'style:single', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts'),
+  gulp.parallel('style', 'style:single', 'js', 'copy:css', 'copy:img', 'copy:js', 'copy:fonts', 'javascript'),
   'pug'
 ));
 
@@ -530,6 +530,8 @@ gulp.task('serve', gulp.series('build', function() {
   if(lists.js.length) {
     gulp.watch(lists.js, gulp.series('js', reload));
   }
+
+  gulp.watch('./src/js/*.js', gulp.series('javascript', reload));
 
   // SVG-изображения, попадающие в спрайт
   if((projectConfig.blocks['sprite-svg']) !== undefined) {

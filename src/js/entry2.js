@@ -1,5 +1,9 @@
-var $ = require('jquery');
+// var $ = require('jquery');
+var isMobile = require('ismobilejs');
 
-$( document ).ready(function() {
-  $('.haters').fadeOut();
-});
+console.log(isMobile);
+console.log(window.isMobile);
+
+// $( document ).ready(function() {
+//   $('.haters').fadeOut();
+// });
