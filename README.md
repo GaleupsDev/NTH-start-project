@@ -21,8 +21,8 @@
       <td>Запустить задачу с названием ЗАДАЧА (список задач в <code>./gulpfile.js</code>)</td>
     </tr>
     <tr>
-      <td><code>folder=src/img npm start img:opt</code></td>
-      <td>Оптимизация изображений из папки <code>./src/img</code> (или любой другой)</td>
+      <td><code>npm run img-opt</code></td>
+      <td>Оптимизация изображений из папки <code>./src/img</code></td>
     </tr>
     <tr>
       <td><code>npm run build</code></td>
@@ -322,3 +322,7 @@ src/            # Исходные файлы.
   index.pug     # - главная страница проекта.
   blocks-demo.pug # - библиотека блоков.
 ```
+
+## Нравится проект?
+
+Ставьте звезду в верхнем правом углу и/или [угостите меня кофе](https://money.yandex.ru/to/41001252765094), переведя сколь угодно символическую сумму.
