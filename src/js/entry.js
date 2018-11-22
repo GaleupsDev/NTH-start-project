@@ -1,3 +1,2 @@
-var entry2 = require('./entry2.js');
-
-// entry2();
+require('./entry2.js');
+require('./entry3.js');
